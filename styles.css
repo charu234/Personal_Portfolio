@@ -1,0 +1,524 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #edf4f2;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 75px;
+    background-color: #edf4f2;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+
+}
+
+nav ul li {
+    list-style: none;
+    padding: 30px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:hover {
+    color: #447056;
+    font-size: 1.05rem;
+}
+
+.left {
+    font-size: 1.5rem;
+}
+
+section h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #31473a;
+}
+.firstSection {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 70px 0;
+
+}
+
+.firstSection>div {
+    width: 32%;
+}
+
+.leftsection {
+    font-size: 2.5rem;
+}
+.Buttons-first a{
+    font-size: 15px;
+    text-decoration: none;
+    border: 2px solid #447056;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #447056;
+    color: white;
+}
+.Buttons-first a:hover{
+    background-color: #edf4f2;
+    color: #31473a;
+}
+
+.rightsection img {
+    width: 90%;
+    border: 2px solid transparent;
+    border-radius: 25px;
+}
+
+.myName {
+    color: #31473a;
+    font-weight: 600;
+}
+
+#element {
+    color: #31473a;
+    font-weight: 600;
+}
+
+.SecondSection {
+    max-width: 80vw;
+    margin: auto;
+}
+
+main hr {
+    border: 0;
+    background-color: #31473a;
+    height: 1.2px;
+    margin: 40px 50px;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 45px auto;
+}
+
+.container {
+    padding: 10px 15px;
+    position: relative;
+    width: 45%;
+    animation: movedown 1s linear forwards;
+    opacity: 0;
+}
+
+@keyframes movedown {
+    0% {
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.container:nth-child(1) {
+    animation-delay: 2s;
+}
+
+.container:nth-child(2) {
+    animation-delay: 3s;
+}
+
+.container:nth-child(3) {
+    animation-delay: 4s;
+}
+
+.text-area {
+    padding: 20px 30px;
+    border: 5px solid #447056;
+    background: #edf4f2;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.text-area h3 {
+    font-weight: 600;
+}
+
+.text-area small {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.left-Container {
+    left: 0;
+}
+
+.right-container {
+    left: 52%;
+}
+
+.container img {
+    position: absolute;
+    width: 40px;
+    border-radius: 50%;
+    right: -49px;
+    top: 32px;
+    z-index: 10;
+}
+
+.right-container img {
+    left: -44px;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: #31473a;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+    animation: moveline 3s linear forwards;
+}
+
+@keyframes moveline {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 100%;
+    }
+}
+
+.left-container-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #447056;
+    right: -15px;
+}
+
+.right-container-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #447056;
+    left: -15px;
+
+}
+
+.ThirdSection {
+    max-width: 80vw;
+    margin: auto;
+}
+.content-thirdsec{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+.leftside{
+    width: 50%;
+}
+.leftside p{
+    margin: 25px 0;
+}
+.leftside a{
+    background-color: #447056;
+    color: white;
+    padding: 8px 16px;
+    border: 2px solid #447056;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+.leftside a:hover{
+    background-color: #edf4f2;
+    color: #447056;
+}
+.rightside{
+    flex: 1;
+    margin-left: 30px;
+    font-size: 15px;
+}
+.line{
+    margin-bottom: 20px;
+}
+.info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fourthSection {
+    max-width: 80vw;
+    margin: auto;
+}
+.bars{
+    background-color: #b4ded1;
+    height: 5px;
+    width: 100%;
+    position: relative;
+}
+.bars::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    background-color:#447056;
+}
+.html::before{
+  width: 90%;
+}
+.css::before{
+    width: 85%;
+}
+.js::before{
+    width: 80%;
+}
+.node::before{
+    width: 70%;
+}
+.cp::before{
+    width: 90%;
+}
+.react::before{
+    width: 60%;
+}
+.container-projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 1rem;
+    padding: 1rem 60px;
+    font-size: 15px;
+}
+.project-box {
+    padding: 0;
+    border: 1px solid #447056;
+    border-radius: 20px;
+    color: black;
+    cursor: pointer;
+}
+
+.project-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.project-title h3 {
+    color: #31473a;
+}
+
+.fourthSection img {
+    width: 25vw;
+    height: 35vh;
+    position: relative;
+    border-radius: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-button {
+    border: 2px solid #447056;
+    background-color: #447056;
+    color: #edf4f2;
+    border-radius: 6px;
+    width: 97px;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    margin: 40px;
+}
+
+.project-button:hover {
+    color:#447056;
+    background-color: #edf4f2;
+    font-size: 12px;
+}
+.Fifthsecton{
+    max-width: 80vw;
+    margin: auto;
+}
+.Fifthsecton .form-input{
+    padding: 5px;
+    width: 30vw;
+    margin-right: 20px;
+}
+textarea{
+    margin-top: 20px;
+    height: 10vh;
+    min-width: 63vw;
+}
+.form-btn{
+    border: 2px solid #447056;
+    background-color: #447056;
+    color: #edf4f2;
+    border-radius: 6px;
+    padding: 6px;
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+.form-btn:hover{
+    background-color: #edf4f2;
+    color: #447056;
+}
+.sixth{
+   color: #447056;
+   margin: 5%;
+   padding-left: 50px;
+}
+.sixth div{
+    padding:10px 0 10px 0;
+}
+.sixth img{
+    height: 20px;
+    width: 20px;
+}
+.sixth a{
+    text-decoration: none;
+    color: black;
+    
+}
+ 
+@media screen and (max-width : 1100px){
+    nav{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .firstSection{
+        flex-direction:column-reverse;
+    }
+    .leftsection{
+        font-size:xx-large;
+        width: 100% !important; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .rightsection{
+        width: 390px !important;
+        display: flex;
+        justify-content: center;
+    }
+    .rightsection img{
+        width: 60vw;
+    }
+    nav ul li{
+        padding: 15px;
+    }
+    body{
+        min-width: fit-content;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .timeline {
+        margin: 22px auto;
+    }
+
+    .timeline::after {
+        left: 31px;
+    }
+
+    .container {
+        width: 100%;
+        left: 80px;
+        right: 25px;
+    }
+
+    .text-area {
+        font: 13px;
+    }
+
+    .text-area small {
+        margin-bottom: 10px;
+    }
+
+    .right-container {
+        left: 80px;
+    }
+
+    .right-container img,
+    .left-Container img {
+        left: -70px;
+    }
+
+    .left-container-arrow,
+    .right-container-arrow {
+        border-right: 15px solid #447056;
+        border-left: 0;
+        left: -15px;
+    }
+    textarea{
+        height: 5vh;
+        min-width: 68vw;
+    }
+}
+
+@media screen and (max-width : 990px){
+    .container-projects{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem 50px;
+    }
+    .project-button{
+        margin: 5px;
+        padding: 5px;
+    }   
+    textarea{
+        min-width: 64vw;
+    }
+}
+@media screen and (max-width :650px) {
+    .container-projects{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 1rem 5px;
+    }
+    
+    .project-button{
+        margin: 5px;
+        padding: 5px;
+    } 
+    textarea{
+        min-width: 66vw;
+    }
+    
+}
+
+@media screen and (max-width : 750px) {
+    .content-thirdsec{
+        display:contents;
+    }
+    .leftside{
+        width: 100%;
+    }
+    .rightside{
+        margin: 30px;
+    }
+}
